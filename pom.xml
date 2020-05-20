@@ -18,7 +18,14 @@
   <build>
     <finalName>java-tomcat-maven-example</finalName>
     <plugins>
-      <plugin>
+      <artifactId>maven-war-plugin</artifactId>
+ <version>2.2</version>
+ <configuration>
+  <source>1.7</source>
+  <target>1.7</target>
+  <failOnMissingWebXml>false</failOnMissingWebXml>
+ </configuration>
+      </plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
         <version>2.3</version>
